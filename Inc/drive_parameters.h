@@ -43,16 +43,16 @@
                                                             estimates (percentage) */
 /* State observer scaling factors F1 */
 #define F1                               16384
-#define F2                               2048
+#define F2                               1024
 #define F1_LOG                           LOG2(16384)
-#define F2_LOG                           LOG2(2048)
+#define F2_LOG                           LOG2(1024)
 
 /* State observer constants */
-#define GAIN1                            -24515
-#define GAIN2                            27516
+#define GAIN1                            -24525
+#define GAIN2                            16505
 /*Only in case PLL is used, PLL gains */
-#define PLL_KP_GAIN                      598
-#define PLL_KI_GAIN                      42
+#define PLL_KP_GAIN                      499
+#define PLL_KI_GAIN                      29
 #define PLL_KPDIV     16384
 #define PLL_KPDIV_LOG LOG2(PLL_KPDIV)
 #define PLL_KIDIV     65535
@@ -82,7 +82,7 @@
 /**************************    DRIVE SETTINGS SECTION   **********************/
 /* PWM generation and current reading */
 
-#define PWM_FREQUENCY   10000
+#define PWM_FREQUENCY   12000
 #define PWM_FREQ_SCALING 1
 
 #define LOW_SIDE_SIGNALS_ENABLING        LS_PWM_TIMER
@@ -95,10 +95,10 @@
                                                            number of PWM cycles */
 /* Gains values for torque and flux control loops */
 #define PID_TORQUE_KP_DEFAULT         2427
-#define PID_TORQUE_KI_DEFAULT         191
+#define PID_TORQUE_KI_DEFAULT         160
 #define PID_TORQUE_KD_DEFAULT         100
 #define PID_FLUX_KP_DEFAULT           3264
-#define PID_FLUX_KI_DEFAULT           191
+#define PID_FLUX_KI_DEFAULT           160
 #define PID_FLUX_KD_DEFAULT           100
 
 /* Torque/Flux control loop gains dividers*/
